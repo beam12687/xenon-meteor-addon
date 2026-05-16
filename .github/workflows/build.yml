@@ -9,12 +9,10 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
-      - name: Unzip source
-        run: unzip xenon-meteor-addon-src.zip
       - name: Build
         run: cd meteor-xenon && chmod +x gradlew && ./gradlew build
       - name: Upload JAR
         uses: actions/upload-artifact@v4
         with:
           name: xenon-meteor-addon
-          path: meteor-xenon/build/libs/*-1.0.0.jar
+          path: meteor-xenon/build/libs/*.jar

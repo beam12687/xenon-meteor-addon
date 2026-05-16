@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "xenon-meteor-addon",
+  "version": "1.0.0",
+  "name": "Xenon Meteor Addon",
+  "description": "Amethyst ESP and Activity Debug",
+  "license": "CC0-1.0",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": ["com.xenon.addon.XenonAddon"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "meteor-client": "*"
+  }
+}
